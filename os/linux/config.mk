@@ -863,7 +863,7 @@ ifeq ($(PLATFORM),PC)
 	export CFLAGS
     else
 	# Linux 2.6
-	EXTRA_CFLAGS := $(WFLAGS) -I$(RT28xx_DIR)/include
+	EXTRA_CFLAGS := $(WFLAGS) -I$(RT28xx_DIR)/include #-I/usr/lib/gcc/x86_64-unknown-linux-gnu/8.2.0/include
     endif
 endif
 

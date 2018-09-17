@@ -1084,6 +1084,7 @@ RTMP_OS_FD RtmpOSFileOpen(char *pPath,
 	else if (flag == RTMP_FILE_TRUNC)
 		flag = O_TRUNC;
 
+	DBGPRINT(RT_DEBUG_ERROR, ("pPath: %p, flag: %d\n", pPath, flag));
 	filePtr = filp_open(pPath, flag, 0);
 	if (IS_ERR(filePtr)) {
 		DBGPRINT(RT_DEBUG_ERROR,

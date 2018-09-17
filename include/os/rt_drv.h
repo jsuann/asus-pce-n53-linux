@@ -31,6 +31,7 @@
 #include "os/rt_linux_cmm.h"
 #include <linux/string.h>
 #include <linux/ctype.h>
+#include <linux/fcntl.h>
 
 #undef AP_WSC_INCLUDED
 #undef STA_WSC_INCLUDED
